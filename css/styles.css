@@ -144,7 +144,6 @@ main {
   cursor: pointer;
   min-width: 200px;
   min-height: 50px;
-  box-shadow: 0px 4px 4px 0px #00000026;
   border-radius: 4px;
   border: none;
 }
@@ -308,6 +307,12 @@ main {
   font-size: 18px;
   line-height: 2;
 }
+.pj-card:hover,
+.pj-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .filters {
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -316,6 +321,7 @@ main {
   color: var(--title-cl);
 }
 .btn.filters:hover,
+.btn.filters:focus,
 .btn.filters:active {
   background-color: var(--accent-cl);
   color: var(--white-bg);
@@ -327,6 +333,7 @@ main {
   letter-spacing: 0.03em;
   margin: 0;
 }
+
 .list.menu {
   padding: 0px 210px 0px 210px;
   width: 100%;
@@ -341,8 +348,10 @@ main {
   border-radius: 4px;
   border: 0;
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: var(--main-text-cl);
+  box-shadow: 0px 4px 4px 0px #00000026;
 }
 .list.menu li:not(:last-child) {
   padding-right: 8px;
@@ -448,14 +457,10 @@ main {
   border-radius: 4px;
 }
 
-.customers:hover {
+.customers:hover,
+.customers:focus {
   border: 1px solid var(--accent-cl);
 }
-/* .soc-med:hover {
-  fill: red;
-  color: blue;
-  outline: 10px;
-} */
 
 .media {
   display: flex;
@@ -465,7 +470,8 @@ main {
   height: 44px;
 }
 
-.media:hover {
+.media:hover,
+.media:focus {
   color: white;
   background-color: var(--accent-cl);
 }
@@ -491,7 +497,8 @@ main {
   padding-right: 30px;
 }
 
-.clients.icon:hover {
+.clients.icon:hover,
+.clients.icon:focus {
   display: flex;
   color: var(--accent-cl);
 }
@@ -536,7 +543,7 @@ main {
 .footer-icons {
   display: flex;
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--white-bg);
   align-items: center;
 }
 .ft-ic {
@@ -544,7 +551,8 @@ main {
   width: 44px;
   height: 44px;
 }
-.footer-icons:hover {
+.footer-icons:hover,
+.footer-icons:focus {
   color: white;
   background-color: var(--accent-cl);
 }
